@@ -37,7 +37,7 @@ const App = () => {
             title: 'My Ai assistance chatbot',
             description: 'An intelligent chatbot combining Cohere AI, OpenAI, and Gemini with conversation memory and real-time responses',
             tech: ['React', 'Node.js', 'MongoDB', 'Express Router', 'OpenAI API', 'Google Gemini API','Cohere AI API'],
-            image: './images/Screenshot (75app).png',
+            image: './images/Screenshot (75).png',
             demo: 'https://aiassistant-sage.vercel.app',
             github: 'https://github.com/Tiwaloluwa002/My-Ai-Assistant-chatbot'
         },
@@ -330,7 +330,7 @@ const App = () => {
                                     alt={project.title}
                                     className="project-image"
                                     onError={(e) => {
-                                        e.target.src = 'https://via.placeholder.com/400x225?text=Project+Image';
+                                        e.target.src = "https://dummyimage.com/600x400/cccccc/ffffff&text=No+Image+Available";
                                     }}
                                 />
                                 <div className="project-content">
