@@ -207,7 +207,7 @@ const App = () => {
                                     className="primary-button"
                                     onClick={() => {
                                         const link = document.createElement('a');
-                                        link.href = '/assets/Tiwaloluwa_Akinsola_Resume.pdf';
+                                        link.href = 'src/assets/Tiwaloluwa_Akinsola_Resume.pdf';
                                         link.download = 'Tiwaloluwa_Akinsola_Resume.pdf';
                                         document.body.appendChild(link);
                                         link.click();
