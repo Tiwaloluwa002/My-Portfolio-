@@ -21,7 +21,7 @@ const App = () => {
             description: 'A full-stack e-commerce platform for books featuring Firebase authentication, Stripe payments, real-time inventory, and admin dashboard with product management (create/edit/delete).',
             tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe API', 'Firebase Auth', ' RESTful API '],
             image: './images/Screenshot (72).png',
-            demo: 'https://bookstore-coral-five.vercel.',
+            demo: 'https://bookstore-coral-five.vercel.app',
             github: 'https://github.com/Tiwaloluwa002/bookstore-backend'
         },
         
