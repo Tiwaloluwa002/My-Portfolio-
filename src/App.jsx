@@ -61,8 +61,8 @@ const App = () => {
                 'Form Handling'
             ],
             image: './images/2025-03-27 (1).png',
-            demo: 'https://demo.example.com',
-            github: 'https://github.com/example'
+            demo: 'https://tiwaloluwaportfolio.vercel.app/',
+            github: 'https://github.com/Tiwaloluwa002/My-Portfolio-'
         },
         // ... (other projects remain the same)
     ];
