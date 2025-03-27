@@ -1,0 +1,211 @@
+/* ======================
+   ANIMATION KEYFRAMES
+   ====================== */
+
+/* Base Animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Special Animations */
+@keyframes rotate-in {
+  from {
+    opacity: 0;
+    transform: rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ======================
+   ANIMATION CLASSES
+   ====================== */
+
+/* Base Animation Classes */
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-rotate-in {
+  animation: rotate-in 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Delayed Animations */
+[data-animation-delay="100"] { animation-delay: 0.1s; }
+[data-animation-delay="200"] { animation-delay: 0.2s; }
+[data-animation-delay="300"] { animation-delay: 0.3s; }
+[data-animation-delay="400"] { animation-delay: 0.4s; }
+[data-animation-delay="500"] { animation-delay: 0.5s; }
+[data-animation-delay="600"] { animation-delay: 0.6s; }
+[data-animation-delay="700"] { animation-delay: 0.7s; }
+[data-animation-delay="800"] { animation-delay: 0.8s; }
+
+/* ======================
+   COMPONENT-SPECIFIC ANIMATIONS
+   ====================== */
+
+/* Hero Section Animations */
+.hero-title {
+  animation: fade-in-down 0.8s ease-out 0.2s forwards;
+}
+
+.hero-description {
+  animation: fade-in-up 0.8s ease-out 0.4s forwards;
+}
+
+.profile-image-wrapper {
+  animation: rotate-in 0.8s ease-out 0.3s forwards;
+}
+
+/* Skills Circle Animations */
+.skill-icon:nth-child(1) {
+  animation: fade-in-up 0.8s ease-out 0.3s forwards;
+}
+.skill-icon:nth-child(2) {
+  animation: slide-in-right 0.8s ease-out 0.4s forwards;
+}
+.skill-icon:nth-child(3) {
+  animation: fade-in-down 0.8s ease-out 0.5s forwards;
+}
+.skill-icon:nth-child(4) {
+  animation: slide-in-left 0.8s ease-out 0.6s forwards;
+}
+
+/* Project Card Animations */
+.project-card {
+  animation: scale-in 0.8s ease-out forwards;
+}
+
+/* Button Hover Animations */
+.primary-button:hover,
+.secondary-button:hover {
+  animation: float 0.8s ease-in-out;
+}
+
+/* ======================
+   ANIMATION UTILITIES
+   ====================== */
+
+.animation-paused {
+  animation-play-state: paused;
+}
+
+.animation-running {
+  animation-play-state: running;
+}
+
+/* Initially hide animated elements */
+[data-animate] {
+  opacity: 0;
+}
+
+/* ======================
+   RESPONSIVE ADJUSTMENTS
+   ====================== */
+
+@media (max-width: 768px) {
+  /* Reduce animation distances on mobile */
+  @keyframes slide-in-left {
+    from { transform: translateX(-30px); }
+  }
+  
+  @keyframes slide-in-right {
+    from { transform: translateX(30px); }
+  }
+  
+  /* Simplify animations on mobile for performance */
+  .project-card {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+}
