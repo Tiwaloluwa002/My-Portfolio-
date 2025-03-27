@@ -21,7 +21,7 @@ const App = () => {
             description: 'A full-stack e-commerce platform for books featuring Firebase authentication, Stripe payments, real-time inventory, and admin dashboard with product management (create/edit/delete).',
             tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe API', 'Firebase Auth', ' RESTful API '],
             image: './images/Screenshot (72).png',
-            demo: 'https://bookstore-coral-five.vercel.app',
+            demo: 'https://bookstore-coral-five.vercel.',
             github: 'https://github.com/Tiwaloluwa002/bookstore-backend'
         },
         
@@ -37,7 +37,7 @@ const App = () => {
             title: 'My Ai assistance chatbot',
             description: 'An intelligent chatbot combining Cohere AI, OpenAI, and Gemini with conversation memory and real-time responses',
             tech: ['React', 'Node.js', 'MongoDB', 'Express Router', 'OpenAI API', 'Google Gemini API','Cohere AI API'],
-            image: './images/Screenshot (75).png',
+            image: './images/Screenshot (75app).png',
             demo: 'https://aiassistant-sage.vercel.app',
             github: 'https://github.com/Tiwaloluwa002/My-Ai-Assistant-chatbot'
         },
@@ -468,7 +468,7 @@ const App = () => {
                                 </a>
                             </Tooltip>
                             <Tooltip title="LinkedIn">
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <a href="www.linkedin.com/in/tiwaloluwaakinsola" target="_blank" rel="noopener noreferrer">
                                     <LinkedinOutlined className="social-icon" />
                                 </a>
                             </Tooltip>
