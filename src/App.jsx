@@ -61,7 +61,7 @@ const App = () => {
                 'Form Handling'
             ],
             image: './images/2025-03-27 (1).png',
-            demo: 'https://tiwaloluwaportfolio.vercel.app/',
+            demo: 'https://tiwaloluwaportfolio.vercel.app',
             github: 'https://github.com/Tiwaloluwa002/My-Portfolio-'
         },
         // ... (other projects remain the same)
@@ -207,8 +207,9 @@ const App = () => {
                                     className="primary-button"
                                     onClick={() => {
                                         const link = document.createElement('a');
-                                        link.href = 'src/assets/Tiwaloluwa_Akinsola_Resume.pdf';
-                                        link.download = 'Tiwaloluwa_Akinsola_Resume.pdf';
+                                        link.href = 'public/Tiwaloluwa_Akinsola_Resume.pdf';
+                                    
+                                    link.download = 'Tiwaloluwa_Akinsola_Resume.pdf';
                                         document.body.appendChild(link);
                                         link.click();
                                         document.body.removeChild(link);
@@ -216,7 +217,6 @@ const App = () => {
                                 >
                                     Download Resume
                                 </Button>
-                                
                                 
                                 <div className="skills-grid">
                                     <div className="skill-card">
